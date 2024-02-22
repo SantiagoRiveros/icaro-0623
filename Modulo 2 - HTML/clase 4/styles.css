@@ -1,0 +1,42 @@
+/* 
+DESKTOP FIRST
+
+h2 {
+  display: none;
+}
+
+@media (max-width: 501px) {
+  body {
+    background-color: black;
+  }
+  h1 {
+    color: white;
+  }
+  h2 {
+    display: block;
+    color: white;
+  }
+} */
+
+/* MOBILE FIRST */
+
+body {
+  background-color: black;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+@media (min-width: 502px) {
+  body {
+    background-color: white;
+  }
+  h1 {
+    color: black;
+  }
+  h2 {
+    display: none;
+  }
+}

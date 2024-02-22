@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form>
+      <h1>Formulario</h1>
+      <label for="fullName">Nombre Completo</label>
+      <input name="fullName" id="fullName" type="text" />
+      <label for="username">Nombre de Usuario</label>
+      <input name="username" id="username" type="text" />
+      <label for="email">Correo Electronico</label>
+      <input name="email" id="email" type="email" />
+      <label for="password">Contraseña</label>
+      <input name="password" id="password" type="password" />
+      <label for="passwordRepeat">Repetir Contraseña</label>
+      <input name="passwordRepeat" id="passwordRepeat" type="password" />
+      <label for="birthDate">Fecha de Nacimiento</label>
+      <input name="birthDate" id="birthDate" type="date" />
+      <label for="profilePicture">Foto de Perfil</label>
+      <input name="profilePicture" id="profilePicture" type="file" />
+      <label for="country">Pais</label>
+      <select id="country" name="country">
+        <option value="Argentina">Argentina</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Otro">Otro</option>
+      </select>
+      <label for="phone">Numero de Telefono</label>
+      <input name="phone" id="phone" type="tel" />
+      <label for="gender">Genero</label>
+      <fieldset>
+        <div>
+          <label for="male">Masculino</label>
+          <input type="radio" id="male" name="gender" value="male" />
+        </div>
+        <div>
+          <label for="female">Femenino</label>
+          <input type="radio" id="female" name="gender" value="female" />
+        </div>
+        <div>
+          <label for="other">Otro</label>
+          <input type="radio" id="other" name="gender" value="other" />
+        </div>
+      </fieldset>
+      <div>
+        <label for="newsletter">Suscribirse al newsletter</label>
+        <input name="newsletter" id="newsletter" type="checkbox" />
+      </div>
+      <div>
+        <label for="termsAndConditions"
+          >Acepto los términos y condiciones</label
+        >
+        <input
+          name="termsAndConditions"
+          id="termsAndConditions"
+          type="checkbox"
+        />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
