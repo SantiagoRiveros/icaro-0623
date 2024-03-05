@@ -14,3 +14,7 @@ app.get("/usuarios/:usuarioId", (req, res) => {
   const usuarioId = req.params.usuarioId;
   res.sendFile(__dirname + "/vista/usuario" + usuarioId + ".html");
 });
+
+app.get("/login", (req, res) => {
+  res.sendFile(__dirname + "/vista/login.html");
+});
