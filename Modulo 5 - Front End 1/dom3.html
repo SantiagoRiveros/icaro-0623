@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="holaMundo">Hola Mundo</h1>
+    <button id="milanesa">Milanesa</button>
+    <button id="Paty">Paty</button>
+    <script>
+      const holaMundo = document.getElementById("holaMundo");
+      const botonMilanesa = document.getElementById("milanesa");
+      const botonPaty = document.getElementById("Paty");
+
+      botonMilanesa.addEventListener("click", function () {
+        holaMundo.textContent = "Milanesa";
+      });
+
+      botonPaty.addEventListener("click", function () {
+        holaMundo.textContent = "Paty";
+      });
+    </script>
+  </body>
+</html>

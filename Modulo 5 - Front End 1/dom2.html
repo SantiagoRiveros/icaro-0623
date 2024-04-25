@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="fondo">
+      <button id="azul">Azul</button>
+      <button id="rojo">Rojo</button>
+      <button id="amarillo">Amarillo</button>
+    </div>
+    <script>
+      const botonAzul = document.getElementById("azul");
+      const botonRojo = document.getElementById("rojo");
+      const botonAmarillo = document.getElementById("amarillo");
+      const fondo = document.getElementById("fondo");
+
+      botonAzul.addEventListener("click", function () {
+        fondo.style.backgroundColor = "blue";
+      });
+
+      botonRojo.addEventListener("click", function () {
+        fondo.style.backgroundColor = "red";
+      });
+
+      botonAmarillo.addEventListener("click", function () {
+        fondo.style.backgroundColor = "yellow";
+      });
+    </script>
+  </body>
+</html>
